@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import logo from '../../assets/logo.svg';
 import hamburger from '../../assets/icon-hamburger.svg';
 
-function Items() {
+function Items({ setIsActive }) {
   const menuClickHandler = () => {
-    // console.log('hello');
+    setIsActive((prevState) => !prevState);
   };
 
   const focusStyle = 'focus:outline-none focus:ring focus:border-blue-300';
@@ -21,5 +22,9 @@ function Items() {
     </div>
   );
 }
+
+Items.propTypes = {
+  setIsActive: PropTypes.func.isRequired,
+};
 
 export default Items;
