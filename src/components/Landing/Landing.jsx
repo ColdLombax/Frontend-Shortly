@@ -1,7 +1,7 @@
 import React from 'react';
 
 import working from '../../assets/illustration-working.svg';
-import GetStarted from './GetStarted';
+import Header from './Header';
 
 function Landing() {
   return (
@@ -9,7 +9,7 @@ function Landing() {
       <div className="overflow-hidden">
         <img src={working} alt="Illustration of someone working at a desk" className="relative left-16" />
       </div>
-      <GetStarted />
+      <Header />
     </div>
   );
 }
