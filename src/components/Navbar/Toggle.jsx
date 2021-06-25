@@ -15,6 +15,7 @@ function Toggle({ isActive }) {
   ];
   // eslint-disable-next-line max-len
   const navElements = navItems.map((item) => <ToggleItem title={item.title} isLine={!item.isLine} isButton={item.isButton} />);
+
   return (
     <div>
       {isActive && (
