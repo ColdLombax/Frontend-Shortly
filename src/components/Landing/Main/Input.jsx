@@ -7,14 +7,18 @@ function Input() {
   const submitHandler = (event) => {
     event.preventDefault();
     setIsValidInput(false);
+
+    // Input Validation
     const expression = /^((ftp|http|https):\/\/)?(www.)?(?!.*(ftp|http|https|www.))[a-zA-Z0-9_-]+(\.[a-zA-Z]+)+((\/)[\w#]+)*(\/\w+\?[a-zA-Z0-9_]+=\w+(&[a-zA-Z0-9_]+=\w+)*)?$/gm;
     const regex = new RegExp(expression);
-    if (!userInput.match(regex)) {
+    if (userInput.match(regex)) {
+      // Call API
+    } else {
       setIsValidInput(true);
     }
-
     setUserInput('');
   };
+
   return (
     <form className="bg-purple-base flex flex-col p-6 pl-10 pr-10 rounded-xl bg-mobile-shorten-bg bg-no-repeat bg-right-top">
       <input
