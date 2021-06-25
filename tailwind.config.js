@@ -9,6 +9,10 @@ module.exports = {
         'custom-gray': '#9E9AA8',
         'custom-black': '#34313D',
       },
+      backgroundImage: {
+        'mobile-shorten-bg': 'url(/src/assets/bg-shorten-mobile.svg)',
+        'desktop-shorten-bg': 'url(/src/assets/bg-shorten-desktop.svg)',
+      },
     },
   },
   variants: {
