@@ -7,6 +7,7 @@ module.exports = {
         'purple-base': '#3A3054',
         'cyan-base': '#2BD0D0',
         'custom-gray': '#9E9AA8',
+        'custom-black': '#34313D',
       },
     },
   },
