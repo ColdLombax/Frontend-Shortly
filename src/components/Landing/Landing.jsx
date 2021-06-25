@@ -1,7 +1,9 @@
 import React from 'react';
 
 import working from '../../assets/illustration-working.svg';
-import Header from './Header';
+
+import Header from './Header/Header';
+import Main from './Main/Main';
 
 function Landing() {
   return (
@@ -10,6 +12,7 @@ function Landing() {
         <img src={working} alt="Illustration of someone working at a desk" className="relative left-16" />
       </div>
       <Header />
+      <Main />
     </div>
   );
 }
