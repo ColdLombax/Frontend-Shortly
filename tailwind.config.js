@@ -8,6 +8,7 @@ module.exports = {
         'cyan-base': '#2BD0D0',
         'custom-gray': '#9E9AA8',
         'custom-black': '#34313D',
+        'custom-white': '#EFF1F7',
       },
       backgroundImage: {
         'mobile-shorten-bg': 'url(/src/assets/bg-shorten-mobile.svg)',
