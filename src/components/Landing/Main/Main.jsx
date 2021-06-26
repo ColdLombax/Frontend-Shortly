@@ -5,8 +5,8 @@ import LinkCard from './LinkCard';
 
 function Main() {
   const [linkList] = useState([
-    { short: 'short link', long: 'long link' },
-    { short: 'test link', long: 'long link' },
+    { short: 'https://rel.ink/k4lKyk', long: 'https://twitter.com/frontendmentor' },
+    { short: 'https://rel.ink/gob3X9', long: 'https://www.linkedin.com/compan…' },
   ]);
 
   const cards = linkList.map((link) => <LinkCard short={link.short} long={link.long} />);
