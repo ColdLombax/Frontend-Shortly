@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 function LinkCard({ short, long }) {
   return (
-    <div>
-      <p>{short}</p>
+    <div className="m-auto w-3/4 bg-cyan-base">
       <p>{long}</p>
+      <p>{short}</p>
       <button type="button">Copy</button>
     </div>
   );

@@ -20,7 +20,7 @@ function Input() {
   };
 
   return (
-    <form className="bg-purple-base flex flex-col p-6 pl-10 pr-10 rounded-xl bg-mobile-shorten-bg bg-no-repeat bg-right-top">
+    <form className="bg-purple-base flex flex-col p-6 pl-10 pr-10 rounded-xl bg-mobile-shorten-bg bg-no-repeat bg-right-top relative bottom-10">
       <input
         type="url"
         id="url-input"

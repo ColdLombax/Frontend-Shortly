@@ -11,8 +11,13 @@ function Landing() {
       <div className="overflow-hidden">
         <img src={working} alt="Illustration of someone working at a desk" className="relative left-16" />
       </div>
-      <Header />
-      <Main />
+      <div>
+        <Header />
+      </div>
+      <div className="bg-gray-100">
+        <Main />
+      </div>
+
     </div>
   );
 }
