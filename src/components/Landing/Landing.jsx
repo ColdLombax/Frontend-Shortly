@@ -14,7 +14,7 @@ function Landing() {
       <div>
         <Header />
       </div>
-      <div className="bg-gray-100">
+      <div className="bg-custom-white">
         <Main />
       </div>
 
