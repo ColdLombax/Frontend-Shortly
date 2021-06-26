@@ -7,7 +7,7 @@ import Landing from './components/Landing/Landing';
 
 function App() {
   return (
-    <div id="base">
+    <div id="base" className="bg-white">
       <Navbar />
       <Landing />
     </div>
