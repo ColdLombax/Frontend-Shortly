@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import Input from './Input';
 import LinkCard from './LinkCard';
+import Details from './Details/Details';
 
 function Main() {
   const [linkList] = useState([
@@ -19,6 +20,7 @@ function Main() {
       <section id="cards">
         {cards}
       </section>
+      <Details />
     </main>
   );
 }
