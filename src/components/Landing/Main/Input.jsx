@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import UserContext from '../../../UserContext';
 
 function Input() {
+  const focusStyle = useContext(UserContext);
   const [userInput, setUserInput] = useState('');
   const [isValidInput, setIsValidInput] = useState(false);
 
@@ -28,13 +30,13 @@ function Input() {
         placeholder="Shorten a link here..."
         value={userInput}
         onChange={(e) => setUserInput(e.target.value)}
-        className={`rounded-md p-3 text-custom-black ${isValidInput ? 'border-2 border-red-500' : ''}`}
+        className={`rounded-md p-3 text-custom-black ${focusStyle} ${isValidInput ? 'border-2 border-red-500' : ''}`}
       />
       {isValidInput && <i className="text-red-400 mt-1 text-sm">Please add a link</i>}
       <button
         type="submit"
         onClick={submitHandler}
-        className="bg-cyan-base p-3 rounded-md text-white font-bold mt-3"
+        className={`bg-cyan-base p-3 rounded-md text-white font-bold mt-3 ${focusStyle}`}
       >
         Shorten It!
       </button>

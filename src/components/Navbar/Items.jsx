@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 
 import logo from '../../assets/logo.svg';
 import hamburger from '../../assets/icon-hamburger.svg';
+import UserContext from '../../UserContext';
 
 function Items({ setIsActive }) {
   const menuClickHandler = () => {
     setIsActive((prevState) => !prevState);
   };
 
-  const focusStyle = 'focus:outline-none focus:ring focus:border-blue-300';
+  const focusStyle = useContext(UserContext);
 
   return (
     <div className="flex p-3">
@@ -17,6 +18,7 @@ function Items({ setIsActive }) {
         <img src={logo} alt="shortly" className="p-2" />
       </button>
       <button type="button" onClick={menuClickHandler} className={focusStyle}>
+
         <img src={hamburger} alt="hamburger" className="p-2" />
       </button>
     </div>

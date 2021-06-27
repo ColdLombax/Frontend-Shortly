@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
+import UserContext from '../../../UserContext';
 
 function LinkCard({ short, long }) {
+  const focusStyle = useContext(UserContext);
   const copyHandler = () => {
     const temp = document.createElement('textarea');
     temp.value = short;
@@ -18,7 +20,7 @@ function LinkCard({ short, long }) {
       <p className={`${linkOverflowStyle}`}>{long}</p>
       <hr />
       <p className={`${linkOverflowStyle} text-cyan-base`}>{short}</p>
-      <button type="button" onClick={copyHandler} className="bg-cyan-base w-full rounded-sm text-white p-2 font-bold">Copy</button>
+      <button type="button" onClick={copyHandler} className={`bg-cyan-base w-full rounded-sm text-white p-2 font-bold ${focusStyle}`}>Copy</button>
     </div>
   );
 }
