@@ -4,6 +4,7 @@ import working from '../../assets/illustration-working.svg';
 
 import Header from './Header/Header';
 import Main from './Main/Main';
+import Footer from './Footer/Footer';
 
 function Landing() {
   return (
@@ -16,6 +17,7 @@ function Landing() {
       </div>
       <div className="bg-custom-white">
         <Main />
+        <Footer />
       </div>
 
     </div>
