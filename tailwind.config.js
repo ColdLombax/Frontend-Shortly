@@ -13,6 +13,8 @@ module.exports = {
       backgroundImage: {
         'mobile-shorten-bg': 'url(/src/assets/bg-shorten-mobile.svg)',
         'desktop-shorten-bg': 'url(/src/assets/bg-shorten-desktop.svg)',
+        'mobile-boost-bg': 'url(/src/assets/bg-boost-desktop.svg)',
+        'desktop-boost-bg': 'url(/src/assets/bg-boost-desktop.svg)',
       },
     },
   },
