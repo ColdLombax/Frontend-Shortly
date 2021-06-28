@@ -10,7 +10,13 @@ function Main() {
     { short: 'https://rel.ink/gob3X9', long: 'https://www.linkedin.com/compan…' },
   ]);
 
-  const cards = linkList.map((link) => <LinkCard short={link.short} long={link.long} />);
+  const cards = linkList.map((link) => (
+    <LinkCard
+      key={link.short}
+      short={link.short}
+      long={link.long}
+    />
+  ));
 
   return (
     <main>
