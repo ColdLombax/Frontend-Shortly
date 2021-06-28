@@ -29,7 +29,7 @@ function LinkCard({ short, long }) {
       <button
         type="button"
         onClick={copyHandler}
-        className={` ${isCopied ? 'bg-purple-base' : 'bg-cyan-base'} w-full rounded-sm text-white p-2 font-bold ${focusStyle}`}
+        className={` ${isCopied ? 'bg-purple-base' : 'bg-cyan-base'} w-full rounded-md text-white p-2 font-bold ${focusStyle}`}
       >
         {isCopied ? 'Copied!' : 'Copy'}
       </button>
