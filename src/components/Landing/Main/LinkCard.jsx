@@ -1,16 +1,22 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import PropTypes from 'prop-types';
 import UserContext from '../../../UserContext';
 
 function LinkCard({ short, long }) {
+  const [isCopied, setIsCopied] = useState(false);
   const focusStyle = useContext(UserContext);
+
   const copyHandler = () => {
+    setIsCopied(true);
     const temp = document.createElement('textarea');
     temp.value = short;
     document.body.appendChild(temp);
     temp.select();
     document.execCommand('copy');
     document.body.removeChild(temp);
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 2000);
   };
 
   // Paragraph Styling
@@ -20,7 +26,13 @@ function LinkCard({ short, long }) {
       <p className={`${linkOverflowStyle}`}>{long}</p>
       <hr />
       <p className={`${linkOverflowStyle} text-cyan-base`}>{short}</p>
-      <button type="button" onClick={copyHandler} className={`bg-cyan-base w-full rounded-sm text-white p-2 font-bold ${focusStyle}`}>Copy</button>
+      <button
+        type="button"
+        onClick={copyHandler}
+        className={` ${isCopied ? 'bg-purple-base' : 'bg-cyan-base'} w-full rounded-sm text-white p-2 font-bold ${focusStyle}`}
+      >
+        {isCopied ? 'Copied!' : 'Copy'}
+      </button>
     </div>
   );
 }
