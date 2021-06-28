@@ -1,11 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 
+import UserContext from '../../../UserContext';
+
 function FooterItem({ name }) {
+  const focusStyle = useContext(UserContext);
   return (
     <li className="mb-3 font-bold">
-      <a href="#">{name}</a>
+      <a href="#" className={`${focusStyle}`}>{name}</a>
     </li>
   );
 }
