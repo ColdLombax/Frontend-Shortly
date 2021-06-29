@@ -9,10 +9,9 @@ import Footer from './Footer/Footer';
 function Landing() {
   return (
     <div>
-      <div className="overflow-hidden">
-        <img src={working} alt="Illustration of someone working at a desk" className="relative left-16" />
-      </div>
-      <div>
+      <div />
+      <div className="overflow-hidden lg:flex flex-row-reverse lg:mt-20">
+        <img src={working} alt="Illustration of someone working at a desk" className="relative left-16 lg:w-3/6" />
         <Header />
       </div>
       <div className="bg-custom-white">
