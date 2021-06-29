@@ -22,14 +22,14 @@ function LinkCard({ short, long }) {
   // Paragraph Styling
   const linkOverflowStyle = 'pb-2 pt-2 overflow-ellipsis overflow-hidden whitespace-nowrap';
   return (
-    <div className="m-auto w-5/6 mb-5 bg-white rounded-md text-custom-black p-4">
-      <p className={`${linkOverflowStyle}`}>{long}</p>
-      <hr />
-      <p className={`${linkOverflowStyle} text-cyan-base`}>{short}</p>
+    <div className="m-auto w-5/6 mb-5 bg-white rounded-md text-custom-black p-4 lg:flex">
+      <p className={`${linkOverflowStyle} lg:mr-auto`}>{long}</p>
+      <hr className="lg:hidden" />
+      <p className={`${linkOverflowStyle} text-cyan-base lg:mr-10`}>{short}</p>
       <button
         type="button"
         onClick={copyHandler}
-        className={` ${isCopied ? 'bg-purple-base' : 'bg-cyan-base'} w-full rounded-md text-white p-2 font-bold ${focusStyle}`}
+        className={` ${isCopied ? 'bg-purple-base' : 'bg-cyan-base'} w-full rounded-md text-white p-2 font-bold ${focusStyle} lg:w-2/12 xl:w-1/12 ${!isCopied ? 'lg:hover:bg-cyan-hover' : ''}`}
       >
         {isCopied ? 'Copied!' : 'Copy'}
       </button>
@@ -43,7 +43,3 @@ LinkCard.propTypes = {
 };
 
 export default LinkCard;
-
-// state(copied) when not active setIntveral(state(copy) 2 seconds)
-// long link = previous user input each card has own state
-// short link = api returned call
