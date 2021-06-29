@@ -7,8 +7,8 @@ import UserContext from '../../../UserContext';
 function FooterItem({ name }) {
   const focusStyle = useContext(UserContext);
   return (
-    <li className="mb-3 font-bold">
-      <a href="#" className={`${focusStyle}`}>{name}</a>
+    <li className="mb-3 font-bold lg:font-medium lg:text-sm">
+      <a href="#" className={`${focusStyle} lg:hover:text-cyan-base`}>{name}</a>
     </li>
   );
 }

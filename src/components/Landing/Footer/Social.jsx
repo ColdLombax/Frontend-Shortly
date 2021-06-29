@@ -7,7 +7,7 @@ import instagram from '../../../assets/icon-instagram.svg';
 
 function Social() {
   return (
-    <ul className="flex gap-5 mt-10">
+    <ul className="flex gap-5 mt-10 lg:ml-20 lg:mr-20">
       <li>
         <img src={facebook} alt="facebook" />
       </li>
