@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         'purple-base': '#3A3054',
         'cyan-base': '#2BD0D0',
+        'cyan-hover': '#9AE3E3',
         'custom-gray': '#9E9AA8',
         'custom-black': '#34313D',
         'custom-white': '#EFF1F7',
