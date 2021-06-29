@@ -5,10 +5,7 @@ import LinkCard from './LinkCard';
 import Details from './Details/Details';
 
 function Main() {
-  const [linkList] = useState([
-    { short: 'https://rel.ink/k4lKyk', long: 'https://twitter.com/frontendmentor' },
-    { short: 'https://rel.ink/gob3X9', long: 'https://www.linkedin.com/compan…' },
-  ]);
+  const [linkList, setLinkList] = useState([]);
 
   const cards = linkList.map((link) => (
     <LinkCard
@@ -21,7 +18,7 @@ function Main() {
   return (
     <main>
       <div className="flex justify-center mt-20">
-        <Input />
+        <Input setLinkList={setLinkList} />
       </div>
       <section id="cards">
         {cards}

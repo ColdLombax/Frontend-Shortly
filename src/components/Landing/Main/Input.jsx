@@ -1,10 +1,14 @@
 import React, { useState, useContext } from 'react';
+import PropTypes from 'prop-types';
+
 import UserContext from '../../../UserContext';
 
-function Input() {
+function Input({ setLinkList }) {
+  const HTTP = 'https://api.shrtco.de/v2/shorten?url=';
   const focusStyle = useContext(UserContext);
   const [userInput, setUserInput] = useState('');
   const [isValidInput, setIsValidInput] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -14,7 +18,17 @@ function Input() {
     const expression = /^((ftp|http|https):\/\/)?(www.)?(?!.*(ftp|http|https|www.))[a-zA-Z0-9_-]+(\.[a-zA-Z]+)+((\/)[\w#]+)*(\/\w+\?[a-zA-Z0-9_]+=\w+(&[a-zA-Z0-9_]+=\w+)*)?$/gm;
     const regex = new RegExp(expression);
     if (userInput.match(regex)) {
-      // Call API
+      setIsLoading(true);
+      fetch(`${HTTP}${userInput}`)
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          setLinkList((prevList) => [
+            ...prevList,
+            { short: data.result.short_link, long: userInput },
+          ]);
+          setIsLoading(false);
+        });
     } else {
       setIsValidInput(true);
     }
@@ -24,7 +38,7 @@ function Input() {
   return (
     <form
       className="bg-purple-base flex flex-col p-6 pl-10 pr-10 rounded-xl bg-mobile-shorten-bg bg-no-repeat bg-right-top relative bottom-10
-      lg:bg-desktop-shorten-bg lg:w-10/12 lg:flex-row lg:gap-5 lg:p-10 lg:relative"
+      lg:bg-desktop-shorten-bg lg:w-10/12 lg:flex-row lg:gap-5 lg:p-10 lg:relative lg:items-center"
     >
       <input
         type="url"
@@ -43,8 +57,13 @@ function Input() {
       >
         Shorten It!
       </button>
+      {isLoading && <p className="text-white text-2xl text-center mt-5 lg:mt-0">Requesting...</p>}
     </form>
   );
 }
+
+Input.propTypes = {
+  setLinkList: PropTypes.func.isRequired,
+};
 
 export default Input;
