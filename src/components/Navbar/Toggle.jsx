@@ -25,7 +25,7 @@ function Toggle({ isActive }) {
   return (
     <div>
       <div className="hidden lg:block">
-        <ul className="flex pr-16 pl-16 justify-center items-center mt-3 xl:mr-20 xl:ml-10 ">
+        <ul className="flex pr-16 pl-16 justify-center items-center mt-3 xl:mr-20 xl:ml-10">
           <li>
             <img src={logo} alt="shortly" className="p-2 mr-5" />
           </li>
