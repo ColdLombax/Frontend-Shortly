@@ -22,7 +22,6 @@ function Input({ setLinkList }) {
       fetch(`${HTTP}${userInput}`)
         .then((response) => response.json())
         .then((data) => {
-          console.log(data);
           setLinkList((prevList) => [
             ...prevList,
             { short: data.result.short_link, long: userInput },
