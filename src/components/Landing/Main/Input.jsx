@@ -22,7 +22,10 @@ function Input() {
   };
 
   return (
-    <form className="bg-purple-base flex flex-col p-6 pl-10 pr-10 rounded-xl bg-mobile-shorten-bg bg-no-repeat bg-right-top relative bottom-10">
+    <form
+      className="bg-purple-base flex flex-col p-6 pl-10 pr-10 rounded-xl bg-mobile-shorten-bg bg-no-repeat bg-right-top relative bottom-10
+      lg:bg-desktop-shorten-bg lg:w-10/12 lg:flex-row lg:gap-5 lg:p-10 lg:relative"
+    >
       <input
         type="url"
         id="url-input"
@@ -30,13 +33,13 @@ function Input() {
         placeholder="Shorten a link here..."
         value={userInput}
         onChange={(e) => setUserInput(e.target.value)}
-        className={`rounded-md p-3 text-custom-black ${focusStyle} ${isValidInput ? 'border-2 border-red-500' : ''}`}
+        className={`rounded-md p-3 text-custom-black ${focusStyle} ${isValidInput ? 'border-2 border-red-500' : ''} lg:w-10/12`}
       />
-      {isValidInput && <i className="text-red-400 mt-1 text-sm">Please add a link</i>}
+      {isValidInput && <i className="text-red-400 mt-1 text-sm lg:absolute lg:bottom-4">Please add a link</i>}
       <button
         type="submit"
         onClick={submitHandler}
-        className={`bg-cyan-base p-3 rounded-md text-white font-bold mt-3 ${focusStyle}`}
+        className={`bg-cyan-base p-3 rounded-md text-white font-bold mt-3 ${focusStyle} lg:w-2/12 lg:mt-0`}
       >
         Shorten It!
       </button>
