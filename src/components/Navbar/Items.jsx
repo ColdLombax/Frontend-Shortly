@@ -15,11 +15,10 @@ function Items({ setIsActive }) {
   return (
     <div className="flex p-3">
       <button type="button" className={`${focusStyle} mr-auto`}>
-        <img src={logo} alt="shortly" className="p-2" />
+        <img src={logo} alt="shortly" className="p-2 lg:hidden" />
       </button>
       <button type="button" onClick={menuClickHandler} className={focusStyle}>
-
-        <img src={hamburger} alt="hamburger" className="p-2" />
+        <img src={hamburger} alt="hamburger" className="p-2 lg:hidden" />
       </button>
     </div>
   );

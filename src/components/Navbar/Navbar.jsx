@@ -6,8 +6,10 @@ function Navbar() {
   const [isActive, setIsActive] = useState(false);
   return (
     <div>
-      <Items setIsActive={setIsActive} />
-      <Toggle isActive={isActive} />
+      <div>
+        <Items setIsActive={setIsActive} />
+        <Toggle isActive={isActive} />
+      </div>
     </div>
   );
 }
