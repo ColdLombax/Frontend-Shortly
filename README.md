@@ -1,24 +1,24 @@
-# Planet Facts
-A responsive website containing awesome planet facts, including rotation times, structure, surface and more! Extraced from a provided JSON file.
+# Shorlty
+A Website used to shorten links via an API, used for sharing and protection.
 
-I had created this website in a few hours as a challenge to myself, accomplish as much as possible within a time frame. I'm happy to say I not only accomplished a lot, but finished the project.
+This website is the first fully complete website built with an API implemented inside. I realised I didn't have many API based projects... Calling data from an external source is probably my favourite task to do within Frontend.
 
 #### The Good
-- Mobile Hamburger Navigation.
-- Color Matches Planets.
+- Overall Layout.
+- Error Handling, Loading & Semantic HTML.
 
 #### The Bad
-- Desktop Responsive.
-- Surface Image Location.
+- API Calls, Very Slow.
+- Interactiveness
 
 <hr />
 
-<a href="https://coldlombax.github.io/Frontend-Planets/" target="blank"> 
-  <img src="https://img.shields.io/badge/DEMO-lightgreen?label=Planet-Facts&style=for-the-badge&logo=react">
+<a href="https://coldlombax.github.io/Frontend-Shortly/" target="blank"> 
+  <img src="https://img.shields.io/badge/DEMO-lightgreen?label=Shortly&style=for-the-badge&logo=react">
 </a>
 <div>
-  <img src="https://user-images.githubusercontent.com/73673516/122131691-75ccaf80-ce31-11eb-8ce1-53dcc76bb3c1.png" width=320>
-  <img src="https://user-images.githubusercontent.com/73673516/122131780-9ac12280-ce31-11eb-883d-f7900eeb54a7.png" width=320>
+  <img src="https://user-images.githubusercontent.com/73673516/123804231-f2a56200-d8e4-11eb-8fbb-28da27e4097c.png" width=320>
+  <img src="https://user-images.githubusercontent.com/73673516/123804214-f0430800-d8e4-11eb-9f0a-be4f3fda7c4d.png" width=320>
 </div>
 
 ## Tools Used
@@ -29,8 +29,8 @@ I had created this website in a few hours as a challenge to myself, accomplish a
   <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="blank"> 
     <img src="https://img.shields.io/badge/html5-333?label=&style=for-the-badge&logo=html5">
   </a>
-   <a href="https://sass-lang.com/" target="blank"> 
-    <img src="https://img.shields.io/badge/sass-333?label=&style=for-the-badge&logo=sass">
+   <a href="https://tailwindcss.com/" target="blank"> 
+    <img src="https://img.shields.io/badge/Tailwind-333?label=&style=for-the-badge&logo=tailwindcss">
   </a>
   <a href="https://www.javascript.com/" target="blank"> 
     <img src="https://img.shields.io/badge/javascript-333?label=&style=for-the-badge&logo=javascript">
@@ -43,7 +43,4 @@ I had created this website in a few hours as a challenge to myself, accomplish a
 #### Motivation
 This challenge was provided by [**FRONTEND MENTOR**](https://www.frontendmentor.io/challenges)<br>
 Check out my other challenges via <a href="https://www.frontendmentor.io/profile/ColdLombax">**MY PROFILE**</a>, or Frontend tagged repositories!
-
-<p align = "center">
-</p>
 
