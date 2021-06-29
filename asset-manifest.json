@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Frontend-Shortly/static/css/main.6cc18947.chunk.css",
+    "main.js": "/Frontend-Shortly/static/js/main.4c0bf5fd.chunk.js",
+    "main.js.map": "/Frontend-Shortly/static/js/main.4c0bf5fd.chunk.js.map",
+    "runtime-main.js": "/Frontend-Shortly/static/js/runtime-main.058b89c8.js",
+    "runtime-main.js.map": "/Frontend-Shortly/static/js/runtime-main.058b89c8.js.map",
+    "static/js/2.aa9a5c99.chunk.js": "/Frontend-Shortly/static/js/2.aa9a5c99.chunk.js",
+    "static/js/2.aa9a5c99.chunk.js.map": "/Frontend-Shortly/static/js/2.aa9a5c99.chunk.js.map",
+    "index.html": "/Frontend-Shortly/index.html",
+    "static/css/main.6cc18947.chunk.css.map": "/Frontend-Shortly/static/css/main.6cc18947.chunk.css.map",
+    "static/js/2.aa9a5c99.chunk.js.LICENSE.txt": "/Frontend-Shortly/static/js/2.aa9a5c99.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Frontend-Shortly/static/media/bg-shorten-mobile.41c34b33.svg",
+    "static/media/icon-brand-recognition.c349d3b6.svg": "/Frontend-Shortly/static/media/icon-brand-recognition.c349d3b6.svg",
+    "static/media/icon-detailed-records.265c8aea.svg": "/Frontend-Shortly/static/media/icon-detailed-records.265c8aea.svg",
+    "static/media/icon-facebook.229c75a0.svg": "/Frontend-Shortly/static/media/icon-facebook.229c75a0.svg",
+    "static/media/icon-fully-customizable.a1532a74.svg": "/Frontend-Shortly/static/media/icon-fully-customizable.a1532a74.svg",
+    "static/media/icon-hamburger.8645754a.svg": "/Frontend-Shortly/static/media/icon-hamburger.8645754a.svg",
+    "static/media/icon-instagram.df587328.svg": "/Frontend-Shortly/static/media/icon-instagram.df587328.svg",
+    "static/media/icon-pinterest.a2d25ab4.svg": "/Frontend-Shortly/static/media/icon-pinterest.a2d25ab4.svg",
+    "static/media/icon-twitter.1d5c6d5e.svg": "/Frontend-Shortly/static/media/icon-twitter.1d5c6d5e.svg",
+    "static/media/illustration-working.c9b5ef54.svg": "/Frontend-Shortly/static/media/illustration-working.c9b5ef54.svg",
+    "static/media/logo.83464303.svg": "/Frontend-Shortly/static/media/logo.83464303.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.058b89c8.js",
+    "static/js/2.aa9a5c99.chunk.js",
+    "static/css/main.6cc18947.chunk.css",
+    "static/js/main.4c0bf5fd.chunk.js"
+  ]
+}
