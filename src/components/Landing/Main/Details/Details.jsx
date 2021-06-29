@@ -13,11 +13,13 @@ function Details() {
   const infoCards = infoData.map((info) => <InfoCard key={info.icon} icon={info.icon} title={info.title} desc={info.desc} />);
   return (
     <article className="m-auto text-center">
-      <h2 className="text-custom-black font-bold text-2xl mt-20">Advanced Statistics</h2>
-      <p className="mt-4 m-auto w-5/6">
+      <h2 className="text-custom-black font-bold text-2xl mt-20 lg:text-4xl">Advanced Statistics</h2>
+      <p className="mt-4 m-auto w-5/6 lg:text-lg lg:w-3/12">
         Track how your links are performing across the web with our advanced statistics dashboard.
       </p>
-      {infoCards}
+      <section className="lg:flex lg:gap-10 lg:p-20 lg:pr-60 lg:pl-60">
+        {infoCards}
+      </section>
     </article>
   );
 }

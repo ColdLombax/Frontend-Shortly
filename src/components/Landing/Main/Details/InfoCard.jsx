@@ -8,19 +8,22 @@ import customizeable from '../../../../assets/icon-fully-customizable.svg';
 
 function InfoCard({ icon, title, desc }) {
   let iconPick = recognition;
+  let topAdjustment = 'lg:top-0';
   switch (icon) {
     case 'records':
       iconPick = records;
+      topAdjustment = 'lg:top-10';
       break;
     case 'customizeable':
       iconPick = customizeable;
+      topAdjustment = 'lg:top-20';
       break;
     default:
       iconPick = recognition;
       break;
   }
   return (
-    <section className="mt-20 m-auto w-5/6 bg-white rounded-md p-8 relative">
+    <section className={`mt-20 m-auto w-5/6 bg-white rounded-md p-8 relative lg:text-left ${topAdjustment}`}>
       <div className="w-full flex justify-center absolute -top-10 -left-0">
         <img src={iconPick} alt={title} className="bg-purple-base p-5 rounded-full" />
       </div>
