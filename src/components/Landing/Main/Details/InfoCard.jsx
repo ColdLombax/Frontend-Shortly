@@ -23,7 +23,7 @@ function InfoCard({ icon, title, desc }) {
       break;
   }
   return (
-    <section className={`mt-20 m-auto w-5/6 bg-white rounded-md p-8 relative lg:text-left ${topAdjustment}`}>
+    <section className={`mt-20 m-auto w-5/6 bg-white rounded-md p-8 relative lg:text-left lg:w-10/12 ${topAdjustment}`}>
       <div className="w-full flex justify-center absolute -top-10 -left-0">
         <img src={iconPick} alt={title} className="bg-purple-base p-5 rounded-full" />
       </div>
